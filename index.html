@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINGRAND - Real Estate Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+
+    <div>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-map-marker-alt"></i> 420 Love Street 133/2 Pk City</span>
+                    <span><i class="fas fa-phone"></i> +000 017 800 628</span>
+                    <span><i class="fas fa-envelope"></i> info.contact@gmail.com</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#">Register</a>
+                    <a href="#">Login</a>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-skype"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <!-- Hamburger Menu Button (Left on Mobile) -->
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Logo (Center on Mobile, Left on Desktop) -->
+                <div class="logo">
+                    <img src="./images/logo.png" alt="MINGRAND Logo">
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#property">Property</a></li>
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <!-- Mobile-only items (hidden on desktop) -->
+                    <li class="mobile-only">
+                        <button class="mobile-submit-btn">Submit Property</button>
+                    </li>
+
+                    <!-- Mobile Contact Info -->
+                    <div class="mobile-contact mobile-only">
+                        <a href="tel:+000017800628" class="mobile-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+000 017 800 628</span>
+                        </a>
+                        <a href="mailto:info.contact@gmail.com" class="mobile-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info.contact@gmail.com</span>
+                        </a>
+                        <a href="#" class="mobile-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>420 Love Street 133/2 Pk City</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Social Icons -->
+                    <div class="mobile-social mobile-only">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </ul>
+
+                <!-- Desktop Search & Submit (Hidden on Mobile) -->
+                <div class="desktop-actions">
+                    <a href="#search" class="search-icon"><i class="fas fa-search"></i></a>
+                    <button class="submit-btn">Submit +</button>
+                </div>
+
+                <!-- Search Button (Right on Mobile) -->
+                <button class="search-toggle" aria-label="Toggle Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Overlay (Dark background when menu is open) -->
+        <div class="mobile-overlay"></div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-label">Real Estate Agency</p>
+                    <h1>The Best Way To<br>Find Your Home</h1>
+                    <p class="hero-text">Lorem ipsum dolor sit amet, in the consectetur elit, sed do eiusmod tempor
+                        adipisicing incididunt ut labore.</p>
+                    <button class="cta-btn">Make An Enquiry</button>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/4 (4).png" alt="House Illustration">
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar" id="search">
+                <div class="container">
+                    <div class="search-options">
+                        <label><input type="radio" name="type" checked> Rent</label>
+                        <label><input type="radio" name="type"> Buy</label>
+                        <label><input type="radio" name="type"> Sold</label>
+                    </div>
+                    <div class="search-inputs">
+                        <input type="text" placeholder="Enter Keyword">
+                        <select>
+                            <option>Office</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                        </select>
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Categories -->
+        <section class="categories" id="property">
+            <div class="container">
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="./images/1 (5).png" alt="Orchard">
+                        <div class="category-info">
+                            <h3>Orchard</h3>
+                            <span class="badge">3 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="./images/2 (4).png" alt="Rose Cottage">
+                        <div class="category-info">
+                            <h3>Rose Cottage</h3>
+                            <span class="badge">6 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="./images/cat-3.png" alt="Ong Barn">
+                        <div class="category-info">
+                            <h3>Ong Barn</h3>
+                            <span class="badge">2 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card large">
+                        <img src="./images/cat-4.png" alt="Beach House">
+                        <div class="category-info">
+                            <h3>Beach House</h3>
+                            <span class="badge">7 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="./images/cat-5.png" alt="Family House">
+                        <div class="category-info">
+                            <h3>Family House</h3>
+                            <span class="badge">1 Properties</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best House Section -->
+        <section class="best-house" id="pages">
+            <div class="container">
+                <p class="section-label">We are offering the best real estate</p>
+                <h2 style="font-size: 42px;">Best House For You</h2>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <img src="./images/1.png" alt="Property">
+                        <span class="for-sale-badge">For Sell</span>
+                        <div class="property-details">
+                            <div class="owner-info">
+                                <img src="./images/1 (4).png" alt="Owner"
+                                    class="owner-avatar">
+                                <div>
+                                    <p class="owner-name">Owner Name</p>
+                                    <p class="location text-left"><span><i class="fas fa-map-marker-alt"
+                                                style="padding-right: 10px"></i>New York real estate</span></p>
+                                </div>
+                                <button class="heart-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span><i class="fas fa-bed"></i> 2</span>
+                                <span><i class="fas fa-bath"></i> 3</span>
+                                <span><i class="fas fa-ruler"></i> 1026 sq ft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="./images/2 (3).png" alt="Property">
+                        <span class="for-sale-badge">For Sell</span>
+                        <div class="property-details">
+                            <div class="owner-info">
+                                <img src="./images/4 (3).png" alt="Owner"
+                                    class="owner-avatar">
+                                <div>
+                                    <p class="owner-name">Owner Name</p>
+                                    <p class="location text-left"><span><i class="fas fa-map-marker-alt"
+                                                style="padding-right: 10px"></i>New York real estate</span></p>
+                                </div>
+                                <button class="heart-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 5</span>
+                                <span><i class="fas fa-ruler"></i> 1026 sq ft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="./images/3 (2).png" alt="Property">
+                        <span class="for-sale-badge">For Sell</span>
+                        <div class="property-details">
+                            <div class="owner-info">
+                                <img src="./images/3 (1).png" alt="Owner"
+                                    class="owner-avatar">
+                                <div>
+                                    <p class="owner-name">Owner Name</p>
+                                    <p class="location text-left"><span><i class="fas fa-map-marker-alt"
+                                                style="padding-right: 10px"></i>New York real estate</span></p>
+                                </div>
+                                <button class="heart-btn"><i class="far fa-heart"></i></button>
+                            </div>
+                            <div class="property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span><i class="fas fa-bed"></i> 2</span>
+                                <span><i class="fas fa-bath"></i> 3</span>
+                                <span><i class="fas fa-ruler"></i> 1026 sq ft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section" id="blog">
+            <div class="container">
+                <h2>The Mordan House Video</h2>
+                <p>Lorem ipsum dolor amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+            </div>
+        </section>
+
+        <!-- Popular Categories -->
+        <section class="categories" id="contact">
+            <div class="container">
+                <p class="section-label" style="text-align: center;">We are offering the best real estate</p>
+                <h2 style="text-align: center;">Popular Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <img src="./images/1 (5).png" alt="Orchard">
+                        <div class="category-info">
+                            <h3>Orchard</h3>
+                            <span class="badge">3 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="./images/2 (4).png" alt="Rose Cottage">
+                        <div class="category-info">
+                            <h3>Rose Cottage</h3>
+                            <span class="badge">6 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="./images/cat-3.png" alt="Ong Barn">
+                        <div class="category-info">
+                            <h3>Ong Barn</h3>
+                            <span class="badge">2 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card large">
+                        <img src="./images/cat-4.png" alt="Beach House">
+                        <div class="category-info">
+                            <h3>Beach House</h3>
+                            <span class="badge">7 Properties</span>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="./images/cat-5.png" alt="Family House">
+                        <div class="category-info">
+                            <h3>Family House</h3>
+                            <span class="badge">1 Properties</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <p class="section-label">Our Testimonial</p>
+                <h2>What Client Say</h2>
+                <p style="padding-bottom: 7%;">Lorem ipsum dolor amet, consectetur adipiscing elit Lorem ipsum dolor sit
+                    amet.</p>
+                <div class="testimonial-slider">
+                    <button class="slider-btn prev"><i class="fas fa-arrow-left"></i></button>
+                    <div class="testimonial-card">
+                        <img src="./images/4.png" alt="Client"
+                            class="client-avatar">
+                        <h3>Sarif Jaya Miprut</h3>
+                        <p>"consecte Lorem ipsum dolor sit amet, Lorem ipsum dolor dolor sit amet, consectetuer do
+                            eiusmod tempor incididunt dolore magna consectetuer adipisicing elit."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <button class="slider-btn next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-properties">
+            <div class="container">
+                <p class="section-label">Our properties</p>
+                <h2>Our Properties</h2>
+                <div class="action-buttons" style="display: flex; justify-content: center;">
+                    <button class="rent-btn">Rent</button>
+                    <button class="sell-btn">Shell</button>
+                </div>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="new-card-img">
+                            <img src="./images/cat-1.png" alt="News">
+                            <div class="property-details">
+                                <div class="owner-info">
+                                    <img src="./images/1 (4).png" alt="Owner"
+                                        class="owner-avatar">
+                                    <div>
+                                        <p class="owner-name">Owner Name</p>
+                                        <p class="location"><span><i class="fas fa-map-marker-alt"
+                                                    style="padding-right: 10px"></i>New York real estate</span></p>
+                                    </div>
+                                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: #f8f7f7ff">
+                            <h3>Daily Apartment</h3>
+
+                            <div class="news-meta">
+                                <span><i class="fas fa-map-marker" style="color: #5a9025"></i> By Admin</span>
+                                <button class="for-sell-btn">For Sell</button>
+                            </div>
+
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <div class="news-property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span class="price">For Sale</span>
+                                <span class="price">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="new-card-img">
+                            <img src="./images/cat-2.png" alt="News">
+                            <div class="property-details">
+                                <div class="owner-info">
+                                    <img src="./images/1 (4).png" alt="Owner"
+                                        class="owner-avatar">
+                                    <div>
+                                        <p class="owner-name">Owner Name</p>
+                                        <p class="location"><span><i class="fas fa-map-marker-alt"
+                                                    style="padding-right: 10px"></i>New York real estate</span></p>
+                                    </div>
+                                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: #f8f7f7ff">
+                            <h3>Gorgeous Vill</h3>
+
+                            <div class="news-meta">
+                                <span><i class="fas fa-map-marker" style="color: #5a9025"></i> By Admin</span>
+                                <button class="for-sell-btn">For Sell</button>
+                            </div>
+
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <div class="news-property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span class="price">For Sale</span>
+                                <span class="price">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="new-card-img">
+                            <img src="./images/3.png" alt="News">
+                            <div class="property-details">
+                                <div class="owner-info">
+                                    <img src="./images/1 (4).png" alt="Owner"
+                                        class="owner-avatar">
+                                    <div>
+                                        <p class="owner-name">Owner Name</p>
+                                        <p class="location"><span><i class="fas fa-map-marker-alt"
+                                                    style="padding-right: 10px"></i>New York real estate</span></p>
+                                    </div>
+                                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: #f8f7f7ff">
+                            <h3>Daily Property</h3>
+
+                            <div class="news-meta">
+                                <span><i class="fas fa-map-marker" style="color: #5a9025"></i> By Admin</span>
+                                <button class="for-sell-btn">For Sell</button>
+                            </div>
+
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <div class="news-property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span class="price">For Sale</span>
+                                <span class="price">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="new-card-img">
+                            <img src="./images/1.png" alt="News">
+                            <div class="property-details">
+                                <div class="owner-info">
+                                    <img src="./images/1 (4).png" alt="Owner"
+                                        class="owner-avatar">
+                                    <div>
+                                        <p class="owner-name">Owner Name</p>
+                                        <p class="location"><span><i class="fas fa-map-marker-alt"
+                                                    style="padding-right: 10px"></i>New York real estate</span></p>
+                                    </div>
+                                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: #f8f7f7ff">
+                            <h3>Form House</h3>
+
+                            <div class="news-meta">
+                                <span><i class="fas fa-map-marker" style="color: #5a9025"></i> By Admin</span>
+                                <button class="for-sell-btn">For Sell</button>
+                            </div>
+
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <div class="news-property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span class="price">For Sale</span>
+                                <span class="price">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="new-card-img">
+                            <img src="./images/12.png" alt="News">
+                            <div class="property-details">
+                                <div class="owner-info">
+                                    <img src="./images/1 (4).png" alt="Owner"
+                                        class="owner-avatar">
+                                    <div>
+                                        <p class="owner-name">Owner Name</p>
+                                        <p class="location"><span><i class="fas fa-map-marker-alt"
+                                                    style="padding-right: 10px"></i>New York real estate</span></p>
+                                    </div>
+                                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: #f8f7f7ff">
+                            <h3>Beach Side House</h3>
+
+                            <div class="news-meta">
+                                <span><i class="fas fa-map-marker" style="color: #5a9025"></i> By Admin</span>
+                                <button class="for-sell-btn">For Sell</button>
+                            </div>
+
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <div class="news-property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span class="price">For Sale</span>
+                                <span class="price">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="new-card-img">
+                            <img src="./images/6.png" alt="News">
+                            <div class="property-details">
+                                <div class="owner-info">
+                                    <img src="./images/1 (4).png" alt="Owner"
+                                        class="owner-avatar">
+                                    <div>
+                                        <p class="owner-name">Owner Name</p>
+                                        <p class="location"><span><i class="fas fa-map-marker-alt"
+                                                    style="padding-right: 10px"></i>New York real estate</span></p>
+                                    </div>
+                                    <button class="heart-btn"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="background-color: #f8f7f7ff">
+                            <h3>Gorgeous Hotel</h3>
+
+                            <div class="news-meta">
+                                <span><i class="fas fa-map-marker" style="color: #5a9025"></i> By Admin</span>
+                                <button class="for-sell-btn">For Sell</button>
+                            </div>
+
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <div class="news-property-stats">
+                                <span class="price">$ 80,650.00</span>
+                                <span class="price">For Sale</span>
+                                <span class="price">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Property -->
+        <section class="submit-property">
+            <div class="container">
+                <p class="section-label">Buy Or Sell</p>
+                <h2>Submit Property</h2>
+                <p>consecte Lorem ipsum dolor sit amet, Lorem ipsum dolor dolor sit amet, consectetuer adipisicing elit,
+                    sed do eiusmod tempor incididunt magna consectetuer adipisicing elit.</p>
+                <div class="action-buttons">
+                    <button class="submit-btn">SUBMIT</button>
+                    <button class="submit-btn">BUY NOW</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Agents -->
+        <section class="agents">
+            <div class="container">
+                <p class="section-label">Meet Our Agent</p>
+                <h2>Our Best Agent</h2>
+                <div class="agent-grid">
+                    <div class="agent-card">
+                        <img src="./images/1 (1).png" alt="Agent">
+                        <h3>Sandara Mrikon</h3>
+                        <p>Estate Agent</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <img src="./images/2 (2).png" alt="Agent">
+                        <h3>Sarif Jaya Miprut</h3>
+                        <p>Area Agent</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <img src="./images/3 (4).png" alt="Agent">
+                        <h3>Jordan Smith</h3>
+                        <p>Expert Agent</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners -->
+        <section class="partners">
+            <div class="container">
+                <div class="partners-heading">
+                    <p class="section-label">Buy Or Sell</p>
+                    <h2>Find Best Place For Leaving</h2>
+                </div>
+                <div class="description-btn">
+                    <p>Lorem ipsum dolor sit amet, consectetLorem ipsum dolor sit amet, consectetur adipisicing sed do
+                        eiusmod tempor incididunt dolore magna consectetLorem ipsum dolor adipisicing elit.</p>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+                <div class="partner-logos">
+                    <img src="./images/2.png" alt="Bird Nest">
+                    <img src="./images/3 (3).png" alt="Creative Force">
+                    <img src="./images/4 (1).png" alt="Canadian">
+                    <img src="./images/5 (1).png" alt="Next G3N">
+                    <img src="./images/2.png" alt="Bird Nest">
+                </div>
+            </div>
+        </section>
+
+        <!-- News Feed -->
+        <section class="news-feed">
+            <div class="container">
+                <p class="section-label">Blog & News</p>
+                <h2>News Feads</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <img src="./images/10.png" alt="News">
+                        <div class="news-card-data">
+                            <div class="news-meta">
+                                <span><i class="fas fa-user"></i> By Admin</span>
+                                <span><i class="fas fa-calendar"></i> March 9, 2020</span>
+                            </div>
+                            <h3>Family House</h3>
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <a href="#" class="read-more"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="./images/11.png" alt="News">
+                        <div class="news-card-data">
+                            <div class="news-meta">
+                                <span><i class="fas fa-user"></i> By Admin</span>
+                                <span><i class="fas fa-calendar"></i> March 9, 2020</span>
+                            </div>
+                            <h3>Daily Apartmen</h3>
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <a href="#" class="read-more"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <img src="./images/12.png" alt="News">
+                        <div class="news-card-data">
+                            <div class="news-meta">
+                                <span><i class="fas fa-user"></i> By Admin</span>
+                                <span><i class="fas fa-calendar"></i> March 9, 2020</span>
+                            </div>
+                            <h3>Hotel Resort</h3>
+                            <p>House ipsum dolor consectetur adipisicing elit, sed do eius Lorida ama canse.</p>
+                            <a href="#" class="read-more"><i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer-banner">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <img src="./images/logo.png" alt="Logo">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-skype"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur do eiusmod tempor incididunt labore</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 420 Love Street 133/2 Mingur City. Dhaka</p>
+                        <p><i class="fas fa-phone"></i> +(066) 19 5017 800 628</p>
+                        <p><i class="fas fa-envelope"></i> info.contact@gmail.com</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>News Feed</h3>
+                        <ul>
+                            <li class="d-flex gap-20">
+                                <p>
+                                    <i class="fas fa-user"></i>
+                                    By Admin
+                                </p>
+                                <p>
+                                    <i class="fas fa-calendar"></i>
+                                    March 9, 2020
+                                </p>
+                            </li>
+                            <li class="d-flex gap-20">
+                                <p>
+                                    <i class="fas fa-user"></i>
+                                    By Admin
+                                </p>
+                                <p>
+                                    <i class="fas fa-calendar"></i>
+                                    March 9, 2020
+                                </p>
+                            </li>
+                            <li class="d-flex gap-20">
+                                <p>
+                                    <i class="fas fa-user"></i>
+                                    By Admin
+                                </p>
+                                <p>
+                                    <i class="fas fa-calendar"></i>
+                                    March 9, 2020
+                                </p>
+                            </li>
+                            <li class="d-flex gap-20">
+                                <p>
+                                    <i class="fas fa-user"></i>
+                                    By Admin
+                                </p>
+                                <p>
+                                    <i class="fas fa-calendar"></i>
+                                    March 9, 2020
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Newsletter</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="newsletter">
+                            <input type="email" placeholder="Your Mail">
+                            <button>Subscribe</button>
+                        </div>
+                        <h3>House Tags</h3>
+                        <div class="tags">
+                            <span>CREATIVE</span>
+                            <span>DEVELOPMENT</span>
+                            <span>BEACH</span>
+                            <span>VILLA</span>
+                            <span>CLEAN</span>
+                            <span>SEO</span>
+                            <span>APPERTMENT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>©2022. Copy Right By Solverwp. All Rights Reserved</p>
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
